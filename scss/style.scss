@@ -1,0 +1,12 @@
+$lagoon_blue: #62fdca;
+.hellostring {
+	h1 {
+		background-color: $lagoon_blue;
+		text-align: center;
+	}
+
+	p {
+		background-color: red;
+		text-align: left;
+	}
+}
