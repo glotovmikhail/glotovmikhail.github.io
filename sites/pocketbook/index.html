@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Купить PocketBook в СПб</title>
+    <link rel="icon" href="/img/favicon.png" >
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media-style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="modalform/libs/remodal/remodal.css">
+    <link rel="stylesheet" type="text/css" href="modalform/libs/remodal/remodal-default-theme.css">
+    <link rel="stylesheet" type="text/css" href="modalform/css/formstyle.css">
+    <script type="text/javascript" src="js/anchorScroller.js"></script>
+    <script>
+    function AjaxFormRequest(result_id, formMain, url) {
+        jQuery.ajax({
+            url: url,
+            type: "POST",
+            dataType: "html",
+            data: jQuery("#" + formMain).serialize(),
+            success: function(response) {
+                document.getElementById(result_id).innerHTML = response;
+            },
+            error: function(response) {
+                document.getElementById(result_id).innerHTML = "Возникла ошибка при отправке формы. Попробуйте еще раз";
+            }
+        });
+        $(':input', '#formMain')
+            .not(':button, :submit, :reset, :hidden')
+            .val('')
+            .removeAttr('checked')
+            .removeAttr('selected');
+    }
+    </script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('#nav-wrap').prepend('<div id="menu-icon">Меню</div>');
+        $("#menu-icon").on("click", function() {
+            $("#nav").slideToggle();
+            $(this).toggleClass("active");
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="main-page">
+        <div class="main-menu">
+            <div class="logo"></div>
+            <nav id="nav-wrap">
+                <ul id="nav">
+                    <li>Reader Хауз</li>
+                    <li>
+                        <a href="#firstPage" onclick="return anchorScroller(this)">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#secondPage" onclick="return anchorScroller(this)">Модели</a>
+                    </li>
+                    <li>
+                        <a href="#thirdPage" onclick="return anchorScroller(this)">Планшеты</a>
+                    </li>
+                    <li>
+                        <a href="#fourthPage" onclick="return anchorScroller(this)">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="#fifthPage" onclick="return anchorScroller(this)">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="right">
+                <div class="up"><a class="phone">8-495-790-98-68</a></div>
+                <div class="down"><a href="#win2" class="butt1" data-remodal-target="secondModal">Заказать звонок</a></div>
+            </div>
+        </div>
+        <a name="firstPage" id="firstPage"></a>
+        <div class="main-text">
+            <h1>Читайте любимые книги там<br>где вам удобно</h1>
+            <div class="conmain">
+                <img src="img/book-500.png" class="picture">
+                <div class="text">
+                        <p class="msg">Оставьте заявку сейчас чтобы успеть получить чехол в подарок до
+                            <script type="text/javascript">
+                            d = new Date();
+                            p = new Date(d.getTime() + 10 * 86400000);
+                            monthA = 'января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря'.split(',');
+                            document.write(p.getDate() + ' ' + monthA[p.getMonth()]);
+                            </script>!</p>
+                        <div class="order">
+                        <a href="#win2" class="button" data-remodal-target="secondModal">Заказать сейчас</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#secondPage" class="mouse" onclick="return anchorScroller(this)"></a>
+    <a name="secondPage" id="secondPage"></a>
+    <div class="books">
+        <div class="models">
+            <div class="model one">
+                <div class="temp">
+                    <div class="img" id="image"></div>
+                    <div class="description">
+                        <h1 id="text-opt">PocketBook 614 Basic 3 Plus</h1>
+                        <h3 id="price">5300 руб.</h3>
+                        <p id="text-opt2">Простая в использовании доступная по цене электронная книга с базовой функциональностью. Она пригодится тем, кто ведёт активный образ жизни, много времени проводит в поездках, но не хочет расставаться с возможностью читать.</p>
+                        <h2>ЭКРАН E-Ink</h2>
+                        <p>Экран устройства выполнен по технологии E-Ink, известной также под названием «электронные чернила». Такой дисплей воспроизводит контрастное монохромное изображение, имитируя белую страницу книги с напечатанным на ней чёрным шрифтом. Он не напрягает глаза даже при длительном чтении и экономно расходует электроэнергию.</p>
+                        <h2>БОЛЬШОЙ ВЫБОР ФОРМАТОВ</h2>
+                        <p>Электронная книга поддерживает 17 текстовых и 4 графических формата, поэтому вы сможете открывать различные файлы без конвертации. Также разработчики предусмотрели словари, упрощающие чтение литературы на английском и немецком языках.</p>
+                        <h2 id="memory">БОЛЬШОЙ ОБЪЁМ ПАМЯТИ</h2>
+                        <p id="memory-opt">Объём встроенной памяти составляет 8 Гб, этого уже достаточно, чтобы носить с собой внушительную библиотеку. Но вы можете воспользоваться слотом для карты памяти формата microSD, чтобы добавить ещё до 32 Гб.</p>
+                    </div>
+                    <div class="order">
+                        <a href="#win2" class="button" data-remodal-target="secondModal">Заказать сейчас</a>
+                    </div>
+                </div>
+            </div>
+            <div class="choose">
+                <ul>
+                    <li id="first" class="selected_class">
+                        <img href="#secondPage" src="img/pocket1.png">
+                        <h1>PocketBook 614 Basic 3 Plus <br> _</h1>
+                    </li>
+                    <li id="second">
+                        <img src="img/pocket2.png">
+                        <h1>PocketBook 614 Basic 3 Plus <br> _</h1>
+                    </li>
+                    <li id="third">
+                        <img src="img/pocket3.png">
+                        <h1>PocketBook 615 Dark Brown <br> _</h1>
+                    </li>
+                    <li id="book4">
+                        <img src="img/book4.png">
+                        <h1>PocketBook 625 Basic Touch 2 Black</h1>
+                    </li>
+                    <li id="book5">
+                        <img src="img/book5.png">
+                        <h1>Pocket Book 626 Plus Touch Lux 3</h1>
+                    </li>
+                    <li id="book6">
+                        <img src="img/book6.png">
+                        <h1>Pocket Book 631 Touch HD <br> _</h1>
+                    </li>
+                    <li id="book7">
+                        <img src="img/book7.png">
+                        <h1>Pocket Book 641 Aqua 2 <br> _</h1>
+                    </li>
+                    <li id="book8">
+                        <img src="img/book8.png">
+                        <h1>Pocket Book 840 InkPad 2<br> _</h1>
+                    </li>
+                    <li id="book9">
+                        <img src="img/book9.png">
+                        <h1>Booken Cybook Muse Light<br> _</h1>
+                    </li>
+                    <li id="book10">
+                        <img src="img/book10.png">
+                        <h1>Booken Cybook Odyssey Frontlight 2</h1>
+                    </li>
+                    <li id="book11">
+                        <img src="img/book11.png">
+                        <h1>Ritmix RBK-615<br> _</h1>
+                    </li>
+                    <li id="book12">
+                        <img src="img/book12.png">
+                        <h1>Ritmix RBK-675FL<br> _</h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a name="thirdPage" id="thirdPage"></a>
+    <div class="plates">
+        <div class="models">
+            <div class="model one">
+                <div class="temp">
+                    <div class="img" id="image2"></div>
+                    <div class="description">
+                        <h1 id="name2">Samsung SM-T561 Tab E</h1>
+                        <h3 id="price2">10900 руб.</h3>
+                        <p id="descr2">Планшет Samsung Galaxy Tab E 9.6 SM-T561N 8Gb 3G способен работать в режиме настоящей многозадачности. Пользователь может разделить экран на две части и запустить одновременно два приложения. 5-мегапиксельная камера может создавать очень чёткие и детализованные снимки. Кроме того, она способна работать в режиме серийной фотографии или записи видео с разрешением HD 720. На планшет можно установить специальную оболочку операционной системы Kids Mode. Она отличается более ярким и красочным дизайном, а также наличием специальных обучающих и развлекательных приложений. Кроме того, в "детском" режиме присутствует функция автоматического отключения по таймеру.</p>
+                        <h2>Все необходимые коммуникации</h2>
+                        <p>Планшет оснащен модулями Wi-Fi и Bluetooth, необходимыми для подключения к беспроводным сетям. Кроме того, в нем используются антенны навигационных систем GPS и ГЛОНАСС, которые предназначены для определения местонахождения человека и прокладывания маршрутов.</p>
+                        <h2 id="">Превосходная автономность</h2>
+                        <p id=""> Применение энергосберегающих технологий и батареи большой емкости обеспечивает длительную непрерывную работу устройства. Аккумулятор произведен с применением литий-полимерной технологии – благодаря этому он лишен эффекта памяти и защищен от глубокого разряда.</p>
+                    </div>
+                    <div class="order">
+                        <a href="#win2" class="button" data-remodal-target="secondModal">Заказать сейчас</a>
+                    </div>
+                </div>
+            </div>
+            <div class="choose"  id="fuckthis">
+                <ul>
+                    <li id="plan1" class="selected_class plan">
+                        <img src="img/plate1.png">
+                        <h1>Samsung SM-T561 Tab E</h1>
+                    </li>
+                    <li class="plan" id="plan2">
+                        <img src="img/plate2.png">
+                        <h1>Samsung SM-T585 Tab A</h1>
+                    </li>
+                    <li class="plan" id="plan3">
+                        <img src="img/plate3.png">
+                        <h1>Samsung SM-T819 Tab S2</h1>
+                    </li>
+                    <li class="plan" id="plan4">
+                        <img src="img/plate4.png">
+                        <h1>Samsung SM-T815 Tab S2</h1>
+                    </li>
+                    <li class="plan" id="plan5">
+                        <img src="img/plate5.png">
+                        <h1>Samsung SM-T355 Tab A</h1>
+                    </li>
+                    <li class="plan" id="plan6">
+                        <img src="img/plate6.png">
+                        <h1>Asus Z170CG 8GB</h1>
+                    </li>
+                    <li class="plan" id="plan7">
+                        <img src="img/plate7.png">
+                        <h1>Asus Z301ML</h1>
+                    </li>
+                    <li class="plan" id="plan8">
+                        <img src="img/plate8.png">
+                        <h1>Asus Z380KL</h1>
+                    </li>
+                    <li class="plan" id="plan9">
+                        <img src="img/plate9.png">
+                        <h1>Huawei Mediapad T1 7.0 8GB</h1>
+                    </li>
+                    <li class="plan" id="plan10">
+                        <img src="img/plate10.png">
+                        <h1>Huawei Mediapad T2 7.0 8GB</h1>
+                    </li>
+                    <li class="plan" id="plan11">
+                        <img src="img/plate11.png">
+                        <h1>Huawei Mediapad M2 10.0</h1>
+                    </li>
+                    <li class="plan" id="plan12">
+                        <img src="img/plate12.png">
+                        <h1>LENOVO TAB 2 A10-70L</h1>
+                    </li>
+                    <li class="plan" id="plan13">
+                        <img src="img/plate13.png">
+                        <h1>LENOVO PHAB 2 PLUS 670M</h1>
+                    </li>
+                    <li class="plan" id="plan14">
+                        <img src="img/plate14.png">
+                        <h1>LENOVO PHAB PB1-750M</h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a name="fourthPage" id="fourthPage"></a>
+    <div class="delivery">
+        <h1>Доставка по Москве и до 10 км за МКАД</h1>
+        <div class="content">
+            <div class="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A89d0a66c1c17c395a18e1747c8029a0f73e03c81c41a499c5bfc07e68161948a&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <div class="info">
+                <h2>Доставка в пределах МКАД - 400 руб.<br>Экспресс доставка в течение 4 часов, с момента звонка оператора (только по Москве) - 700 руб.<br>Доставка за МКАД от 500 рублей,за каждый километр дополнительные 50 рублей к тарифу.</h2>
+                <p>Доставка заказа по Москве и до 10км за МКАД осуществляется в день заказа или на следующий день после комплектации заказа.
+                    <br>В вашем заказе могут содержаться, товарные позиции, которых в момент сборки заказа, может не оказаться в наличии на складе. По Вашему желанию, мы можем доставить Вам заказ частично, удалив из заказа отсутствующие на складе позиции.
+                    <br>Доставка по Москве и до 10км за МКАД осуществляется с 09.00 до 22.00
+                    <br>Экспресс доставка - с 9:00 до 19:00.
+                    <br>Если покупатель выбрал экспресс доставку, но курьер не смог доставить заказ в течение 4 часов, с момента звонка оператора, то стоимость доставки приравнивается к обычной (300 руб.).
+                    <br>В случае, если товар не был передан Покупателю по его вине, последующая доставка производится в новые сроки, согласованные с менеджером интернет-магазина.</p>
+                <div class="order">
+                    <a href="#win2" class="button" data-remodal-target="secondModal">Заказать сейчас</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a name="fifthPage" id="fifthPage"></a>
+    <div class="contacts">
+        <div>
+            <h1>Контакты</h1>
+            <h2>Device Plus</h2>
+            <p>г. Москва, Пятницкое шоссе 18 (Митинский радиорынок), 1этаж, линия "В", пав. 156</p>
+        </div>
+        <div class="cont">
+            <div class="inf">
+                <h1>Наш телефон:</h1>
+                <p>8 (495) 790-98-68
+                    <br>8 (929) 595-07-10</p>
+            </div>
+            <div class="inf">
+                <h1>Наша почта:</h1>
+                <p>info@device-plus.ru</p>
+            </div>
+            <div class="inf">
+                <h1>Время работы:</h1>
+                <p>ПН-ВС с 9:00 до 20:00</p>
+            </div>
+            <div class="inf">
+                <h1>Режим приема звонков:</h1>
+                <p>ПН-ВС с 9:00 до 20:00</p>
+            </div>
+            <div class="inf">
+                <h1>Юридическая информация:</h1>
+                <p>ИП: МАМЕДОВ МАТЛАБ ИСМАИЛ ОГЛЫ
+                    <br>ИНН: 773301043977
+                    <br>ОГРНИП: 305770002508590</p>
+            </div>
+        </div>
+    </div>
+    <a href="#x" class="overlay" id="win2"></a>
+    <div class="remodal" data-remodal-id="secondModal" data-remodal-options="hashTracking: false,closeOnConfirm: false">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <div class="formArea">
+            <form id="secondForm" class="form" autocomplete="off">
+                <p class="formTitle">Закажите обратный звонок и мы свяжемся с вами</p>
+                <p class="msgs"></p>
+                <fieldset class="form-fieldset ui-input __first">
+                    <input name="uname" type="text" id="username" tabindex="0" />
+                    <label for="username">
+                        <span data-text="Введите ваше имя">Введите ваше имя</span>
+                    </label>
+                </fieldset>
+                <fieldset class="form-fieldset ui-input __second">
+                    <input name="uphone" type="tel" id="phone" tabindex="0" pattern="^[ 0-9]+$" />
+                    <label for="phone">
+                        <span data-text="Введите ваш телефон">Введите ваш телефон</span>
+                    </label>
+                </fieldset>
+                <input name="formInfo" class="formInfo" type="hidden" value="" />
+                <div class="form-footer">
+                    <input type="submit" class="formBtn" value="Обратный звонок" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+$(document).ready(
+
+    function() {
+        $("li").on("click", function() {
+            $("li").removeClass("selected_class");
+            $("#" + this.id).addClass("selected_class");
+            if (this.className === "plan selected_class") {
+                if (this.id === "plan1") {
+                    $("#name2").html("Samsung SM-T561 Tab E");
+                    $("#price2").html("10900 руб.");
+                    $("#descr2").html("Планшет Samsung Galaxy Tab E 9.6 SM-T561N 8Gb 3G способен работать в режиме настоящей многозадачности. Пользователь может разделить экран на две части и запустить одновременно два приложения. 5-мегапиксельная камера может создавать очень чёткие и детализованные снимки. Кроме того, она способна работать в режиме серийной фотографии или записи видео с разрешением HD 720. На планшет можно установить специальную оболочку операционной системы Kids Mode. Она отличается более ярким и красочным дизайном, а также наличием специальных обучающих и развлекательных приложений. Кроме того, в \"детском\" режиме присутствует функция автоматического отключения по таймеру.");
+                    $("#image2").css({ "background": "url(img/plate1.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "plan2") {
+                    $("#name2").html("Samsung SM-T585 Tab A");
+                    $("#price2").html("16900 руб.");
+                    $("#descr2").html("Снабжён экраном с соотношением сторон 16:10. Такая особенность делает его особенно удобным для чтения электронных книг и новостных изданий, просмотра веб-страниц, воспроизведения видео и для некоторых других целей. Во время путешествий устройство порадует пользователя возможностью доступа к онлайн-контенту с помощью передатчиков 3G/4G. Скорость до 100 Мбит/с гарантирует отсутствие задержек даже при просмотре Full HD-видео. Дома или в офисе быстродействие связи можно многократно увеличить, подключив планшет к маршрутизатору Wi-Fi a/c. Сложно представить себе такие задачи, которые будут не по силам этому девайсу. Применение мощной платформы с восьмиядерным процессором и современной операционной системы Android 6 позволяет работать с любыми приложениями в режиме многозадачности.");
+                    $("#image2").css({ "background": "url(img/plate2.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "plan3") {
+                    $("#name2").html("Samsung SM-T819 Tab S2");
+                    $("#price2").html("27500 руб.");
+                    $("#descr2").html("Планшет Samsung Galaxy Tab S2 9.7 SM-T819 поддерживает обмен данными в сетях 3G и 4G. С помощью такого устройства можно получить доступ в интернет без привязки к компьютерным сетям. Эта модель принимает nanoSIM карты и может работать как смартфон. Модель Samsung Galaxy Tab S2 9.7 SM-T819 не перегружает зрение. Super AMOLED дисплей с высокой плотностью пикселей (2048 x 1536) не напрягает глаза за счёт отсутствия зернистости картинки и контролируемой яркости свечения. Пользователь может смотреть видео, читать или работать с документами часами. Планшет Samsung Galaxy Tab S2 9. SM-T819 весит менее 400 грамм, а толщина корпуса этого устройства - всего 6 миллиметров. Эта модель поместится в деловой сумочке или портфеле, занимая минимум места и предоставляя максимум возможностей.");
+                    $("#image2").css({ "background": "url(img/plate3.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "plan4") {
+                    $("#name2").html("Samsung SM-T815 Tab S2");
+                    $("#price2").html("22500 руб.");
+                    $("#descr2").html("Планшет Samsung Galaxy Tab S2 9.7 SM-T815 располагает всеми функциями, которые ждут от флагмана корейской компании. Сканер отпечатка пальца позволит не только разблокировать устройство легким касанием, но и защитить его. По отпечатку также можно ограничить доступ к отдельным приложениям и аккаунтам. Насладиться изображением на Samsung Galaxy Tab S2 9.7 SM-T815 позволит большой, сочный и яркий 9.7 дюймовый Super AMOLED экран. Он обладает разрешением QXGA то есть 2048 x 1536 пикселей. Соотношение высоты и ширины дисплея 4 к 3, совместно с легким и тонким корпусом, делают комфортным интернет серфинг, чтение книг и работу с интерфейсом. А благодаря улучшенному режиму многозадачности, теперь не придется постоянно сворачивать приложения. Можно использовать браузер и работать с текстовыми файлами одновременно, просто разделив экран на две части, а размер этих частей Вы определяете сами.");
+                    $("#image2").css({ "background": "url(img/plate4.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "plan5") {
+                    $("#name2").html("Samsung SM-T355 Tab A");
+                    $("#price2").html("14800 руб.");
+                    $("#descr2").html("Стильный, тонкий и легкий планшетный компьютер Samsung Galaxy Tab A 8.0 SM-T355 оснащен слотом для SIM-карты и поддерживает высокоскоростной мобильный доступ в Интернет (стандарт LTE/4G). Мощный четырехъядерный процессор и яркий TFT экран с разрешением 1024 x 768 пикселей, обеспечивают стабильную работу приложений и игр, в том числе в многозадачном режиме «двух окон», и комфортный просмотр фото и видео. Тыльная фотокамера с разрешением 5 Мп имеет встроенный автофокус и гарантирует достойное качество снимков, а фронтальная камера с разрешением 2 Мп позволит совершать видеозвонки в Skype");
+                    $("#image2").css({ "background": "url(img/plate5.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "plan6") {
+                    $("#name2").html("Asus Z170CG 8GB");
+                    $("#price2").html("6000 руб.");
+                    $("#descr2").html("Планшет ASUS ZenPad C 7.0 Z170CG оснащен всеми необходимыми беспроводными коммуникациями. Кроме модулей Wi-Fi и Bluetooth в нем имеется приемник 3G, позволяющий получать доступ к Интернету из любой точки. Установка двух SIM-карт дает возможность эффективно управлять тарифными планами мобильных операторов, снижая расходы на разговоры и подключение к Интернету. Планшет снабжен антеннами GPS и ГЛОНАСС, за счет чего он может использоваться для поиска местоположения, прокладывания маршрутов и измерения расстояний. При создании 7-дюймового дисплея применяется технология IPS, которая обеспечивает высокую яркость и контрастность картинки при любых углах обзора. Звуковой адаптер использует технологию DTS-HD Premium Sound, позволяющую очистить сигнал от большей части помех.");
+                    $("#image2").css({ "background": "url(img/plate6.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "plan7") {
+                    $("#name2").html("Asus Z301ML");
+                    $("#price2").html("13450 руб.");
+                    $("#descr2").html("Планшет ASUS ZenPad Z301ML – обновлённая мультимедийная модель с IPS-экраном диагональю 10 дюймов. При его производстве применяются технологии TruVivid и Tru2Life, которые значительно повышают контрастность, нормализуют цветопередачу и сглаживают изображение, значительно улучшая впечатление от просмотра фильмов и видеороликов. Пользователь может полностью сосредоточиться на просмотре – в этом ему поможет аудиосистема со встроенными стереодинамиками и поддержкой объёмного звучания наушников. Современная техническая платформа адаптирована к выполнению задач любого уровня сложности – вплоть до воспроизведения трёхмерной игровой графики. Вместе с тем она потребляет мало электроэнергии, поэтому заряда встроенной батареи хватает на 10 часов просмотра видео или интернет-сёрфинга. Поддержка мобильных сетей LTE предоставляет пользователю высокоскоростной доступ к интернету во время путешествий и повседневных поездок. ");
+                    $("#image2").css({ "background": "url(img/plate7.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "plan8") {
+                    $("#name2").html("Asus Z380KL");
+                    $("#price2").html("12300 руб.");
+                    $("#descr2").html("Планшетный компьютер Asus Z380KL - это компактное и современное устройство для работы и общения, мультимедийных развлечений, просмотра сайтов. Девайс работает под управлением операционной системы Android 5.0. Мощный четырёхъядерный процессор Qualcomm Snapdragon 410 с частотой 1,2 ГГц, работающий при поддержке оперативной памяти объёмом 1 Гб, позволяет эффективно решать разные задачи, от выхода в Интернет и просмотра веб-страниц до запуска мультимедийных приложений и игр. Яркий IPS-дисплей с диагональю 8 дюймов и разрешением 1280х800 пикселей реалистично передаёт цвета. Благодаря широким углам обзора фотографии и видеоролики на нём можно смотреть не только в одиночку, но и сродственниками либо с друзьями.Основная камера с 5-мегапиксельной матрицей способна снимать фото и видео в достойном любительском качестве. Объём встроенной памяти планшета - 16 Гб, этого хватит для хранения большого количества фотографий и видеороликов, при необходимости память можно расширить при помощи карты microSD или microSDHC объёмом до 64 Гб. Разработчики предусмотрели и фронтальную камеру, она оснащена 2-мегапиксельной матрицей и обеспечивает комфортное общение в видеочатах.");
+                    $("#image2").css({ "background": "url(img/plate8.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "plan9") {
+                    $("#name2").html("Huawei Mediapad T1 7.0 8GB");
+                    $("#price2").html("5500 руб.");
+                    $("#descr2").html("Huawei MediaPad T1 7 3G можно использовать как смартфон и как планшет. Благодаря универсальным габаритам фаблетом легко управлять одной рукой. В компактном корпусе собраны все самые необходимые функции: голосовые вызовы, SMS-сообщения, проигрывание видео, игры и удобный поиск в Интернете. Корпус MediaPad 7 3G создан из сплава алюминия и магния, что делает его прочным и легким. Закругленные края обеспечивают удобство использования, а цветовое решение подчеркивает элегантность линий. Универсальный размер экрана – 7 дюймов – удобен в использовании. Благодаря тонкому корпусу (8,5 мм) и весу всего 278 г устройство легко носить в кармане или сумке. Мощный аккумулятор емкостью 4100 мАч с технологией энергосбережения Smart Power 2.5 обеспечивает работу планшета до 16 дней в режиме ожидания и до 48 часов в режиме активного использования, а смотреть видео можно в течение 12 часов без перерывов. ");
+                    $("#image2").css({ "background": "url(img/plate9.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "plan10") {
+                    $("#name2").html("Huawei Mediapad T2 7.0 8GB");
+                    $("#price2").html("6500 руб.");
+                    $("#descr2").html("Huawei Mediapad T2 7.0 – тонкий, лёгкий, удобный планшет с 7-дюймовым экраном. Его легко можно брать с собой на дачу, на пикник, в туристическое путешествие и в другие поездки. Планшет работает под управлением операционной системы Android 6.0. На её освоение не потребуется много времени, она проста, понятна и функциональна. В магазине PlayMarket вас ждёт более миллиона игр и приложений. Ёмкий аккумулятор позволяет не беспокоиться о подключении к розетке в течение примерно 7 часов. Это особенно удобно для людей, ведущих активный образ жизни. Планшет оснащён 2-мегапиксельной основной камерой, которая пригодится, если нужно сфотографировать или снять на видео что-то, что привлекло ваше внимание. 2-мегапиксельная фронталка даст возможность снять селфи, которым не стыдно похвастаться в социальных сетях, а также подойдёт для видеосвязи.");
+                    $("#image2").css({ "background": "url(img/plate10.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "plan11") {
+                    $("#name2").html("Huawei Mediapad M2 10.0");
+                    $("#price2").html("27250 руб.");
+                    $("#descr2").html("Планшет Huawei MediaPad M2 10.0 – это портативная мультимедийная станция. Толщина его корпуса равна всего 7,35 мм, что позволяет носить брать его с собой как в повседневные поездки, так и в продолжительные путешествия. 10,1-дюймовый экран создан с применением технологии IPS. Изображение на нем выглядит ярким и контрастным при любых углах обзора, что делает его идеальным вариантом для просмотра фильмов в самолете, поезде или автомобиле. При этом не стоит переживать о быстрой разрядке батареи – аккумулятора хватает на 10 часов активного использования устройства. Дисплей с разрешением 1920 х 1200 обеспечивает очень высокую детализацию видео и игрового мультимедиа. Но этим сфера его применения не ограничивается. Такой экран поможет сделать презентацию для клиентов, деловых партнеров и инвесторов еще более впечатляющей. Его больший размер позволит рассмотреть даже мельчайшие подробности, не напрягая глаза. Зачем тратить время, закрывая программы, к которым придется вернуться позже? Восьмиядерный процессор, дополненный дискретным видеочипом и оперативной памятью большого объема, дает планшету возможность работать в режиме многозадачности без малейших задержек");
+                    $("#image2").css({ "background": "url(img/plate11.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "plan12") {
+                    $("#text-opt").html("LENOVO TAB 2 A10-70L");
+                    $("#price").html("12300 руб.");
+                    $("#text-opt2").html("Десятидюймовый широкоформатный Full HD IPS-дисплей планшета Tab 2 A10 (1920 x 1200) отличается от других дисплеев увеличенной областью обзора и высочайшим качеством воспроизведения видео. Звуковая панель с несколькими динамиками и поддержкой стандарта Dolby Atmos Cinematic Moving Audio обеспечивает великолепный, объемный звук, погружающий вас в гущу событий. Если добавить сюда Full HD дисплей, то планшет Tab 2 A10 превращается в идеальное устройство для игр и мультимедийных развлечений. Планшет Tab 2 A10 отличается высочайшей производительностью благодаря мощному 64-разрядному четырехъядерному процессору.");
+                    $("#memory").html("");
+                    $("#memory-opt").html("");
+                    $("#image").css({ "background": "url(img/plate12.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "plan13") {
+                    $("#text-opt").html("LENOVO PHAB 2 PLUS 670M");
+                    $("#price").html("16990 руб.");
+                    $("#text-opt2").html("устройство нового поколения, объединяющее в себе функционал планшета и смартфона. Большой сенсорный экран диагональю 6,4” идеально подходит для интернет-серфинга, просмотра видео и фото и использования в качестве навигатора. И в то же время устройство поддерживает одновременную работу 2-х SIM карт, что даст возможность разграничить личные и деловые разговоры, а также оптимизировать расходы на мобильную связь. Безусловным преимуществом Lenovo Phab 2 PB2-670M (ZA1C0033RU)  является дактилоскопический сканер, позволяющий легко защитить персональную информацию – отпечаток пальца владельца выступает в роли своеобразного «пароля» при входе в систему.");
+                    $("#memory").html("");
+                    $("#memory-opt").html("");
+                    $("#image").css({ "background": "url(img/plate13.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "plan14") {
+                    $("#text-opt").html("LENOVO TAB 2 A10-70L");
+                    $("#price").html("14200 руб.");
+                    $("#text-opt2").html("Просматривайте, ищите и загружайте любимый контент при помощи высокоскоростной сети 4G LTE. И больше никакого ожидания. Один фаблет, два телефона. Если хотите воспользоваться преимуществами различных тарифных планов, используйте Lenovo Phab для путешествий, а с двумя SIM-картами вы с легкостью сможете разделить бизнес и развлечения. Испытайте неведомый вам звук с технологией Dolby Atmos®. Подключите наушники и наслаждайтесь живым, насыщенным и четким звуком Lenovo Phab. Вы целиком погружаетесь в звучание, как будто достали из кармана целый кинотеатр.");
+                    $("#memory").html("");
+                    $("#memory-opt").html("");
+                    $("#image").css({ "background": "url(img/plate14.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } 
+
+                destination = $("#thirdPage").offset().top;
+            } else {
+                if (this.id === "first" || this.id === "second") {
+                    $("#text-opt").html("PocketBook 614 Basic 3 Plus");
+                    $("#price").html("5300 руб.");
+                    $("#text-opt2").html("Простая в использовании доступная по цене электронная книга с базовой функциональностью. Она пригодится тем, кто ведёт активный образ жизни, много времени проводит в поездках, но не хочет расставаться с возможностью читать.");
+                    $("#memory").html("БОЛЬШОЙ ОБЪЁМ ПАМЯТИ");
+                    $("#memory-opt").html("Объём встроенной памяти составляет 8 Гб, этого уже достаточно, чтобы носить с собой внушительную библиотеку. Но вы можете воспользоваться слотом для карты памяти формата microSD, чтобы добавить ещё до 32 Гб.");
+                    if (this.id === "first") {
+                        $("#image").css({ "background": "url(img/pocket1.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                    } else {
+                        $("#image").css({ "background": "url(img/pocket2.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                    }
+                } else if (this.id === "third") {
+                    $("#text-opt").html("PocketBook 615 Dark Brown");
+                    $("#price").html("6400 руб.");
+                    $("#text-opt2").html("Электронная книжка PocketBook 615 откроет новый уровень свободы, для истинных почитателей электронного чтения. Благодаря встроенной диодной подсветке и уникальным свойствам 6 дюймового E-Ink Pearl HD дисплея, читать текст продолжительное время гораздо приятнее и удобнее. Мощный процессор с тактовой частотой 1 ГГц и 256 МБ оперативной памяти обеспечат плавное перелистывание и быстрый отклик любого приложения.");
+                    $("#memory").html("БОЛЬШОЙ ОБЪЁМ ПАМЯТИ");
+                    $("#memory-opt").html("Объём встроенной памяти составляет 8 Гб, этого уже достаточно, чтобы носить с собой внушительную библиотеку. Но вы можете воспользоваться слотом для карты памяти формата microSD, чтобы добавить ещё до 32 Гб.");
+                    $("#image").css({ "background": "url(img/pocket3.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "book4") {
+                    $("#text-opt").html("PocketBook 625 Basic Touch 2 Black");
+                    $("#price").html("6000 руб.");
+                    $("#text-opt2").html("Простая и удобная в использовании электронная читалка. Чтение c PocketBook 625 – легкое и увлекательное занятие! PocketBook 625 станет прекрасным подарком даже для тех, кто до сих пор считает, что бумажную книгу читать проще. Гаджет содержит все необходимые функции для комфортного электронного чтения. Мощный процессор с тактовой частотой 1 ГГц и 256 Мб оперативной памяти обеспечивают плавное перелистывание страниц и прекрасный отклик любого приложения. Одного заряда батареи PocketBook 625 хватит до месяца активного чтения! 8 Гб встроенной памяти с возможностью расширения до 32 Гб с помощью карт microSD – целая библиотека, которая всегда под рукой.");
+                    $("#memory").html("");
+                    $("#memory-opt").html("");
+                    $("#image").css({ "background": "url(img/book4.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "book5") {
+                    $("#text-opt").html("PocketBook 626 Plus Touch Lux 3");
+                    $("#price").html("7200 руб.");
+                    $("#text-opt2").html("Компания PocketBook представляет последователя легендарного бестселлера PocketBook Touch 2 – электронный ридер PocketBook 626 Plus, который откроет новый уровень свободы для истинных почитателей электронного чтения. Свобода чтения – это, прежде всего, возможность читать в любых условиях независимо от освещения, благодаря встроенной LED подсветке и уникальным свойствам E Ink экрана. Дисплей E Ink® Carta с диагональю 6” отображает тексты еще более ярко и контрастно. Благодаря мультисенсорному дисплею и интуитивно понятному интерфейсу управлять ридером невероятно комфортно.");
+                    $("#memory").html("ВМЕСТИТЕЛЬНЫЙ");
+                    $("#memory-opt").html("Увеличенный объем батареи дает возможность читать недели напролет, не думая о подзарядке, а 4 ГБ встроенной памяти, с возможностью расширения до 32 ГБ - это целая библиотека, которая всегда под рукой.");
+                    $("#image").css({ "background": "url(img/book5.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "book6") {
+                    $("#text-opt").html("PocketBook 631 Touch HD");
+                    $("#price").html("9500 руб.");
+                    $("#text-opt2").html("Козырем PocketBook 631 Touch HD является экран E Ink Carta HD. Обычно дисплеи Carta в покетбуках имеют разрешение 800 х 600 или 1024 х 758 точек, а в этом устройстве  – 1448 х 1072 пикселя. Как следствие, изображение получается гораздо более четким. Ну и сама технология Carta, конечно, впечатляет: если экраны Pearl (предыдущее поколение) выглядели как неплохая газетная бумага, то дисплеи Carta сравнимы уже с глянцевым журналом или дорогой книгой. Это все потому, что у Carta а) выше контрастность – 15:1 против 12:1 у Pearl и б) заметно белее фон. Читать с PocketBook 631 Touch HD, как говорится, приятнее приятного – и лучшего ридера по качеству экрана мы еще не видели. Читать, кстати, можно в том числе и в темноте – за счет подсветки. Ее интенсивность можно регулировать.");
+                    $("#memory").html("");
+                    $("#memory-opt").html("");
+                    $("#image").css({ "background": "url(img/book6.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "book7") {
+                    $("#text-opt").html("PocketBook 641 Aqua 2");
+                    $("#price").html("8900 руб.");
+                    $("#text-opt2").html("Стильный ридер выполнен в привлекательном лазурно-голубом цвете с перламутровым оттенком, который пробуждает приятные воспоминания о теплых морских волнах, манит погрузиться в комфортное и расслабленное чтение. Эргономичные кнопки расположены на передней панели для удобного управления, удерживая устройство одной рукой, а soft-touch покрытие обеспечивает приятные тактильные ощущения. PocketBook 641 Aqua 2 застрахован от проникновения пыли и может быть погружен в воду на глубину до одного метра без малейшего вреда для устройства. Эти уникальные характеристики гарантируют безопасность использования и предоставляют свободу выбора идеального места для чтения – на яхте, на пляже или у бассейна. PocketBook 641 Aqua 2 – комфорт и надежность неподвластные самой природе!");
+                    $("#memory").html("");
+                    $("#memory-opt").html("");
+                    $("#image").css({ "background": "url(img/book7.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "book8") {
+                    $("#text-opt").html("PocketBook 840 InkPad 2");
+                    $("#price").html("12800 руб.");
+                    $("#text-opt2").html("Как и первый PocketBook 840, ридер оснащен мультисенсорным E Ink Perl экраном с диагональю 8-дюймов и самым высоким разрешением на рынке E Ink устройств - HD Plus (1600x1200 пикселей). По сравнению с предшественником, PocketBook 840 InkPad 2 воспроизводит изображение еще более четко и контрастно, что было достигнуто за счет обновленной конструкции экрана. Благодаря экрану «книжного размера» ридер особенно удобен для чтения специальной и учебной литературы, периодики, просмотра документов с графиками и таблицами. PocketBook 840 InkPad 2 – станет настольной книгой дома и офиса, будет незаменим в работе, для активного саморазвития и просто комфортного чтения. ");
+                    $("#memory").html("");
+                    $("#memory-opt").html("");
+                    $("#image").css({ "background": "url(img/book8.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "book9") {
+                    $("#text-opt").html("Booken Cybook Muse Light");
+                    $("#price").html("6700 руб.");
+                    $("#text-opt2").html("Электронная книжка Bookeen Cybook Muse Light откроет новый уровень свободы для истинных почитателей электронного чтения. Благодаря уникальным свойствам 6 дюймового E-Ink HD дисплея, читать текст продолжительное время гораздо приятнее и удобнее. Мощный процессор с тактовой частотой 1 ГГц и быстрая оперативная память обеспечат плавное перелистывание и быстрый отклик любого приложения. Благодаря мультисенсорному дисплею и интуитивно понятному интерфейсу управлять ридером невероятно комфортно. Плоский дизайн с экраном «от края до края» обеспечивает исключительное удобство чтения. Несравненная тонкость для простоты использования: всего 8мм толщиной и весом 190грамм! Bookeen Cybook Muse Light легко помещается в карман или сумочку, что очень удобно.");
+                    $("#memory").html("");
+                    $("#memory-opt").html("");
+                    $("#image").css({ "background": "url(img/book9.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "book10") {
+                    $("#text-opt").html("Booken Cybook Muse Frontlight 2");
+                    $("#price").html("6700 руб.");
+                    $("#text-opt2").html("Электронная книга Bookeen Cybook Odyssey FrontLight 2 оснащена экраном E-INK Pearl HD, который полностью имитирует поверхность бумажного носителя, обеспечивая удобство чтения. Кроме того, в неё предусмотрена фронтальная подсветка, позволяющая рассмотреть текст даже в полной темноте. Обновлённый интерфейс устройства обеспечивает мгновенный доступ ко всем функциям, а также даёт возможность менять размер шрифта и искать книги без лишних затрат времени. Мощный процессор позволяет не сталкиваться с раздражающими задержками при перелистывании страниц и навигации в меню. Встроенный модуль Wi-Fi предоставляет доступ к интернету, позволяя просматривать веб-страницы с помощью встроенного браузера или загружать книги онлайн.");
+                    $("#memory").html("");
+                    $("#memory-opt").html("");
+                    $("#image").css({ "background": "url(img/book10.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "book11") {
+                    $("#text-opt").html("Ritmix RBK-615");
+                    $("#price").html("3600 руб.");
+                    $("#text-opt2").html("На корпус устройства нанесено покрытие из пластика SoftTouch, оно приятно на ощупь, благодаря ему электронная книга не скользит в руках. Разработчики тщательно продумали расположение клавиш управления, поэтому владельцу удобно будет перелистывать страницы. Владелец может масштабировать текст, изменять размер шрифта так, как ему удобно, делать в тексте закладки. Объём памяти устройства составляет 4 Гб, ещё 32 Гб можно добавить с помощью карты формата microSD.");
+                    $("#memory").html("");
+                    $("#memory-opt").html("");
+                    $("#image").css({ "background": "url(img/book11.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } else if (this.id === "book12") {
+                    $("#text-opt").html("Ritmix RBK-675");
+                    $("#price").html("4600 руб.");
+                    $("#text-opt2").html("Тонкий и лёгкий корпус, а также небольшой вес делают это устройство верным спутником для всех, кто ведёт активный образ жизни и много времени проводит в поездках. 4 Гб встроенной памяти и слот для карт памяти формата microSD объёмом до 32 Гб позволяют носить с собой в сумке огромную библиотеку. Устройство оснащено 6-дюймовым дисплеем с разрешением 758 x 1024 пикселей, выполненным по технологии E-Ink Carta. В отличие от традиционных ЖК-экранов, дисплей на электронных чернилах расходует энергию только при обновлении изображения и меньше напрягает глаза. Благодаря приятной для глаз подсветке владелец может с комфортом читать даже в темноте.");
+                    $("#memory").html("");
+                    $("#memory-opt").html("");
+                    $("#image").css({ "background": "url(img/book12.png) no-repeat", "background-position": "center", "background-size": "contain" });
+                } 
+
+                destination = $("#secondPage").offset().top;
+            }
+            $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 1000);
+
+        });
+    }
+
+);
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(".linkButton").click(function() {
+    $("input[name*='formInfo']").val($(this).attr("title"));
+});
+</script>
+<script src="modalform/libs/remodal/remodal.min.js"></script>
+<script src="modalform/js/form.js"></script>

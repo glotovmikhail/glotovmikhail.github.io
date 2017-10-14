@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Open-Sans-Regular';
+    src: url(Open-Sans-Regular.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Open-Sans-Regular.eot*/
+    ;
+    src: url(Open-Sans-Regular.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Open-Sans-Regular.eot*/
+    format('embedded-opentype'), url(Open-Sans-Regular.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Open-Sans-Regular.sql*/
+    format('woff2'), url(Open-Sans-Regular-1.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Open-Sans-Regular-1.sql*/
+    format('woff'), url(Open-Sans-Regular.hxd)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Open-Sans-Regular.hxd*/
+    format('truetype'), url(Open-Sans-Regular.svg)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Open-Sans-Regular.svg*/
+    format('svg')
+}
+
+@font-face {
+    font-family: 'Open-Sans-Semibold';
+    src: url(Open-Sans-Semibold.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Open-Sans-Semibold.eot*/
+    ;
+    src: url(Open-Sans-Semibold.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Open-Sans-Semibold.eot*/
+    format('embedded-opentype'), url(Open-Sans-Semibold.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Open-Sans-Semibold.sql*/
+    format('woff2'), url(Open-Sans-Semibold-1.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Open-Sans-Semibold-1.sql*/
+    format('woff'), url(Open-Sans-Semibold.hxd)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Open-Sans-Semibold.hxd*/
+    format('truetype'), url(Open-Sans-Semibold.svg)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Open-Sans-Semibold.svg*/
+    format('svg')
+}
+
+@font-face {
+    font-family: 'Roboto-Condensed-Regular';
+    src: url(Roboto-Condensed-Regular.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Condensed-Regular.eot*/
+    ;
+    src: url(Roboto-Condensed-Regular.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Condensed-Regular.eot*/
+    format('embedded-opentype'), url(Roboto-Condensed-Regular.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Condensed-Regular.sql*/
+    format('woff2'), url(Roboto-Condensed-Regular-1.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Condensed-Regular-1.sql*/
+    format('woff'), url(Roboto-Condensed-Regular.hxd)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Condensed-Regular.hxd*/
+    format('truetype'), url(Roboto-Condensed-Regular.svg)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Condensed-Regular.svg*/
+    format('svg')
+}
+
+@font-face {
+    font-family: 'Roboto-Condensed-Bold';
+    src: url(Roboto-Condensed-Bold.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Condensed-Bold.eot*/
+    ;
+    src: url(Roboto-Condensed-Bold.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Condensed-Bold.eot*/
+    format('embedded-opentype'), url(Roboto-Condensed-Bold.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Condensed-Bold.sql*/
+    format('woff2'), url(Roboto-Condensed-Bold-1.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Condensed-Bold-1.sql*/
+    format('woff'), url(Roboto-Condensed-Bold.hxd)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Condensed-Bold.hxd*/
+    format('truetype'), url(Roboto-Condensed-Bold.svg)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Condensed-Bold.svg*/
+    format('svg')
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(Roboto-Regular.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Regular.eot*/
+    ;
+    src: url(Roboto-Regular.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Regular.eot*/
+    format('embedded-opentype'), url(Roboto-Regular.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Regular.sql*/
+    format('woff2'), url(Roboto-Regular-1.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Regular-1.sql*/
+    format('woff'), url(Roboto-Regular.hxd)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Regular.hxd*/
+    format('truetype'), url(Roboto-Regular.svg)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Regular.svg*/
+    format('svg')
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(Roboto-Light.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Light.eot*/
+    ;
+    src: url(Roboto-Light.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Light.eot*/
+    format('embedded-opentype'), url(Roboto-Light.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Light.sql*/
+    format('woff2'), url(Roboto-Light-1.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Light-1.sql*/
+    format('woff'), url(Roboto-Light.hxd)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Light.hxd*/
+    format('truetype'), url(Roboto-Light.svg)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Light.svg*/
+    format('svg')
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(Roboto-Medium.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Medium.eot*/
+    ;
+    src: url(Roboto-Medium.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Medium.eot*/
+    format('embedded-opentype'), url(Roboto-Medium.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Medium.sql*/
+    format('woff2'), url(Roboto-Medium-1.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Medium-1.sql*/
+    format('woff'), url(Roboto-Medium.hxd)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Medium.hxd*/
+    format('truetype'), url(Roboto-Medium.svg)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Medium.svg*/
+    format('svg')
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(Roboto-Bold.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Bold.eot*/
+    ;
+    src: url(Roboto-Bold.eot)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Bold.eot*/
+    format('embedded-opentype'), url(Roboto-Bold.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Bold.sql*/
+    format('woff2'), url(Roboto-Bold-1.sql)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Bold-1.sql*/
+    format('woff'), url(Roboto-Bold.hxd)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Bold.hxd*/
+    format('truetype'), url(Roboto-Bold.svg)/*tpa=http://1370591216.rsc.cdn77.org/jbl/1/fonts/Roboto-Bold.svg*/
+    format('svg')
+}
+
+@font-face {
+	font-family: 'Kievit-Bold-Webfont';
+	src: url(kievit-bold-webfont.eot);
+	src: url(kievit-bold-webfont.eot) format('embedded-opentype'),
+	url('kievit-bold-webfont.woff') format('woff'),
+	url('kievit-bold-webfont.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'Kievit-Extrabold-Webfont';
+	src: url(kievit-extrabold-webfont.eot);
+	src: url(kievit-extrabold-webfont.eot) format('embedded-opentype'),
+	url('kievit-extrabold-webfont.woff') format('woff'),
+	url('kievit-extrabold-webfont.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'Kievit-Medium-Webfont';
+	src: url(kievit-medium-webfont.eot);
+	src: url(kievit-medium-webfont.eot) format('embedded-opentype'),
+	url('kievit-medium-webfont.woff') format('woff'),
+	url('kievit-medium-webfont.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'Kievit-Regular-Webfont';
+	src: url(kievit-regular-webfont.eot);
+	src: url(kievit-regular-webfont.eot) format('embedded-opentype'),
+	url('kievit-regular-webfont.woff') format('woff'),
+	url('kievit-regular-webfont.ttf') format('truetype')
+}
